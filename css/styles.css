@@ -1,0 +1,112 @@
+/* Common styles */
+:root {
+    --iris: #4d5ae5;
+    --navy-blue: #2e2f42;
+    --slate: #434455;
+    --primary-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
+    --white: #fff;
+    --ocean: #404bbf;
+    --cloud: #f4f4fd;
+}
+
+body {
+    font-family: var(--primary-family);
+    color: var(--slate);
+    background-color: var(--white);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--navy-blue);
+}
+
+/* Header */
+.logo {
+    text-transform: uppercase;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.page-header .logo {
+    color: var(--navy-blue);
+}
+
+.page-nav .link {
+    color: var(--navy-blue);
+    font-weight: 500;
+}
+
+.page-nav .link:hover,
+.page-nav .link:active {
+    color: var(--ocean);
+}
+
+.contacts .link {
+    color: var(--slate);
+}
+
+.contacts .link:hover {
+    color: var(--ocean);
+}
+
+/* Sections */
+.section-title {
+    text-align: center;
+}
+
+.hero-section {
+    background-color: var(--navy-blue);
+}
+
+.hero-section .section-title {
+    color: var(--white);
+    font-size: 56px;
+}
+
+.team-section {
+    background-color: var(--cloud);
+}
+
+.features-list .title,
+.team-list .title,
+.portfolio-list .title {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* Buttons */
+.btn {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background-color: var(--iris);
+    color: var(--white);
+}
+
+.btn.primary:hover {
+    background-color: var(--ocean);
+}
+
+/* Footer */
+.page-footer {
+    background-color: var(--navy-blue);
+    
+}
+
+.page-footer, 
+.page-footer .logo {
+    color: var(--cloud);
+}
