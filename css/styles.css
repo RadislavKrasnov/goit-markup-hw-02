@@ -1,6 +1,6 @@
-/* Common styles */
+/* Variables */
 :root {
-    --iris: #4d5ae5;
+    --iris: hsl(235, 75%, 60%);
     --navy-blue: #2e2f42;
     --slate: #434455;
     --primary-family: "Roboto", sans-serif;
@@ -10,6 +10,7 @@
     --cloud: #f4f4fd;
 }
 
+/* Common */
 body {
     font-family: var(--primary-family);
     color: var(--slate);
