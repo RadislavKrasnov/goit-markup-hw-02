@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-size: 36px;
     line-height: 1.11;
+    letter-spacing: 0.02em;
 }
 
 .hero-section {
@@ -83,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--white);
     font-size: 56px;
     line-height: 1.07;
+    text-transform: none;
 }
 
 .team-section {
@@ -97,6 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
 
+.section-title,
 .team-list .title,
 .portfolio-list .title {
     text-transform: capitalize;
