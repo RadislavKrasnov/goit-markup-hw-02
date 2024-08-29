@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --iris: hsl(235, 75%, 60%);
+    --iris: #4d5ae5;
     --navy-blue: #2e2f42;
     --slate: #434455;
     --primary-family: "Roboto", sans-serif;
@@ -17,6 +17,7 @@ body {
     background-color: var(--white);
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 ul {
@@ -37,9 +38,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 18px;
+    color: var(--iris);
+    line-height: 1.17;
+    letter-spacing: 0.03em;
 }
 
-.page-header .logo {
+.page-header .logo .logo-span {
     color: var(--navy-blue);
 }
 
@@ -49,21 +53,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-nav .link:hover,
-.page-nav .link:active {
+.page-nav .link:active,
+.page-nav .link:focus,
+.contacts-list .link:hover,
+.contacts-list .link:focus {
     color: var(--ocean);
 }
 
-.contacts .link {
+.contacts {
+    font-style: normal;
+}
+
+.contacts-list .link {
     color: var(--slate);
-}
-
-.contacts .link:hover {
-    color: var(--ocean);
 }
 
 /* Sections */
 .section-title {
     text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
 }
 
 .hero-section {
@@ -73,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-section .section-title {
     color: var(--white);
     font-size: 56px;
+    line-height: 1.07;
 }
 
 .team-section {
@@ -82,14 +92,26 @@ h1, h2, h3, h4, h5, h6 {
 .features-list .title,
 .team-list .title,
 .portfolio-list .title {
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+}
+
+.team-list .title,
+.portfolio-list .title {
+    text-transform: capitalize;
+}
+
+.team-list .item {
+    background-color: var(--white);
 }
 
 /* Buttons */
 .btn {
     font-weight: 500;
     cursor: pointer;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 .btn.primary {
@@ -97,7 +119,8 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--white);
 }
 
-.btn.primary:hover {
+.btn.primary:hover,
+.btn.primary:focus {
     background-color: var(--ocean);
 }
 
@@ -108,6 +131,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-footer, 
-.page-footer .logo {
+.page-footer .logo .logo-span {
     color: var(--cloud);
 }
